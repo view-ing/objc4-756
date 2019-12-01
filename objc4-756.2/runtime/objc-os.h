@@ -1034,6 +1034,9 @@ ustrdupMaybeNil(const uint8_t *str)
 #define DYLD_WATCHOS_VERSION_0 0
 #define DYLD_BRIDGEOS_VERSION_0 0
 
+#define DYLD_IOS_VERSION_12_0 0
+#define DYLD_IOS_VERSION_10_0 0
+
 // Pretty-print a DYLD_*_VERSION_* constant.
 #define SDK_FORMAT "%hu.%hhu.%hhu"
 #define FORMAT_SDK(v) \

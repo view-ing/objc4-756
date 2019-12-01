@@ -50,7 +50,7 @@
 		2DB68E6D2393B6A700F88FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB68E6C2393B6A700F88FA8 /* Assets.xcassets */; };
 		2DB68E702393B6A700F88FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB68E6E2393B6A700F88FA8 /* LaunchScreen.storyboard */; };
 		2DB68E732393B6A700F88FA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB68E722393B6A700F88FA8 /* main.m */; };
-		2DB68E7A2393B7F300F88FA8 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
+		2DB68E842393C34200F88FA8 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
 		393CEAC00DC69E3E000B69DE /* objc-references.mm in Sources */ = {isa = PBXBuildFile; fileRef = 393CEABF0DC69E3E000B69DE /* objc-references.mm */; };
 		393CEAC60DC69E67000B69DE /* objc-references.h in Headers */ = {isa = PBXBuildFile; fileRef = 393CEAC50DC69E67000B69DE /* objc-references.h */; };
 		39ABD72312F0B61800D1054C /* objc-weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABD71F12F0B61800D1054C /* objc-weak.h */; };
@@ -143,13 +143,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		2DB68E582393B54400F88FA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC0620554660B00DB518D;
-			remoteInfo = objc;
-		};
-		2DB68E7D2393B89900F88FA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -329,7 +322,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB68E7A2393B7F300F88FA8 /* libobjc.A.dylib in Frameworks */,
+				2DB68E842393C34200F88FA8 /* libobjc.A.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,7 +716,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2DB68E7E2393B89900F88FA8 /* PBXTargetDependency */,
 			);
 			name = iOSDemo;
 			productName = iOSDemo;
@@ -791,6 +783,9 @@
 					};
 					837F67A81A771F63004D34FA = {
 						CreatedOnToolsVersion = 6.3;
+					};
+					D2AAC0620554660B00DB518D = {
+						DevelopmentTeam = D987VWZ4WZ;
 					};
 				};
 			};
@@ -970,11 +965,6 @@
 			target = D2AAC0620554660B00DB518D /* objc */;
 			targetProxy = 2DB68E582393B54400F88FA8 /* PBXContainerItemProxy */;
 		};
-		2DB68E7E2393B89900F88FA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2AAC0620554660B00DB518D /* objc */;
-			targetProxy = 2DB68E7D2393B89900F88FA8 /* PBXContainerItemProxy */;
-		};
 		837F67AD1A771F6E004D34FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC0620554660B00DB518D /* objc */;
@@ -1016,7 +1006,9 @@
 				COPY_HEADERS_UNIFDEF_FLAGS = "-UBUILD_FOR_OSX";
 				"COPY_HEADERS_UNIFDEF_FLAGS[sdk=macosx*]" = "-DBUILD_FOR_OSX";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = D987VWZ4WZ;
 				DYLIB_CURRENT_VERSION = 228;
+				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = lib;
 				GCC_CW_ASM_SYNTAX = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1102,7 +1094,9 @@
 				COPY_HEADERS_RUN_UNIFDEF = YES;
 				COPY_HEADERS_UNIFDEF_FLAGS = "-UBUILD_FOR_OSX";
 				"COPY_HEADERS_UNIFDEF_FLAGS[sdk=macosx*]" = "-DBUILD_FOR_OSX";
+				DEVELOPMENT_TEAM = D987VWZ4WZ;
 				DYLIB_CURRENT_VERSION = 228;
+				ENABLE_BITCODE = NO;
 				EXECUTABLE_PREFIX = lib;
 				GCC_CW_ASM_SYNTAX = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
